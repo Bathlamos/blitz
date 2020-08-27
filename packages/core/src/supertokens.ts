@@ -136,7 +136,6 @@ export const publicDataStore = {
     this.updateState()
   },
 }
-publicDataStore.initialize()
 
 export const useSession = () => {
   const [publicData, setPublicData] = useState(emptyPublicData)
@@ -213,3 +212,5 @@ export const setCookie = (name: string, value: string, expires: string) => {
 //     return resolver(input, ctx)
 //   }) as T
 // }
+
+publicDataStore.initialize()
